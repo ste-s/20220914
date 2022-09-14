@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cauculadora</title>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="A">
+    <form name="form">
+            <div>
+            <input type="text" name="saida" readonly>
+            </div>
+
+            <div>
+            <input type="button" value="7" onclick="clique(7);">
+            <input type="button" value="8" onclick="clique(8);">
+            <input type="button" value="9" onclick="clique(9);">
+            <input class="op" type="button" value="+" onclick="op(1);">
+            </div>
+
+            <div>
+            <input type="button" value="4" onclick="clique(4);">
+            <input type="button" value="5" onclick="clique(5);">
+            <input type="button" value="6" onclick="clique(6);">
+            <input class="op" type="button" value="-" onclick="op(2);">
+            </div>
+
+            <div>
+            <input type="button" value="1" onclick="clique(1);">
+            <input type="button" value="2" onclick="clique(2);">
+            <input type="button" value="3" onclick="clique(3);">
+            <input class="op" type="button" value="*" onclick="op(3);">
+            </div>
+
+            <div>
+            <input type="button" value="." onclick="clique('.');"> 
+            <input type="button" value="0" onclick="clique(0);">
+            <input type="button" value="=" onclick="res();">
+            <input class="op" type="button" value="/" onclick="op(4);">
+            </div>
+
+            <div>
+            <input class="limpar" type="button" value="C" onclick="limpar();">
+            </div>
+    </form>
+    </div>
+</body>
+</html>
